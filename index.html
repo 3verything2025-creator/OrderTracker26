@@ -3,7 +3,7 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>OrderTrack</title>
+<title>OrderTrack (fit-v2)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -1979,7 +1979,7 @@ async function renderPO(){
         : '—'}</td>
       <td style="font-size:12px">${r.approvedBy||'—'}</td>
       <td><span class="pill ${statusPill}">${t(r.status)}</span></td>
-      <td style="display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:8px 6px">${actions}</td>
+      <td style="padding:8px 6px"><div style="display:flex;flex-wrap:wrap;gap:6px;align-items:center">${actions}</div></td>
     </tr>`;
   }).join('');
 }
